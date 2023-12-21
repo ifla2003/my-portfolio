@@ -17,7 +17,7 @@
 
   <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
     <div class="container">
-        <a class="navbar-brand" href="#">Ifla</a>
+        <a class="navbar-brand" href="#">Samsi</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -39,25 +39,25 @@
                     <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
-            
+           
         </div>
     </div>
 </nav>
-  <div style="color: black;" id="catFact"></div>
-  
+<div style="color: black;" id="catFact"></div>
   <div id="place"></div>
 <div id="state"></div>
 <div id="time"></div>
 <div id="temperature"></div>
 <div id="humidity"></div>
 <div id="observedAt"></div>
+
  <!-- main banner -->
  <section class="bgimage" id="home">
   <div class="container-fluid">
       <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-          <h2 class="hero_title">Hi, it's me ifla</h2>
-          <p class="hero_desc">I am a professional freelancer in Mardala City</p>
+          <h2 class="hero_title">Hi, it's me Samsi</h2>
+          <p class="hero_desc">I am a professional freelancer in Mardala</p>
       </div>
       </div>
   </div>
@@ -69,17 +69,17 @@
       <h1 class="text-center">About Me</h1>
       <div class="row mt-4">
           <div class="col-lg-4">
-              <img src="images/aboutifla.jpeg" class= "imageAboutPage" alt="">
+              <img src="images/aboutsamsi.jpeg" class= "imageAboutPage" alt="">
           </div>
 
           <div class="col-lg-8">
               <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged
-                  
+                 
               </p>
               <div class="row mt-3">
                   <div class="col-md-6">
                       <ul>
-                          <li>Name: Fathima Ifla</li>
+                          <li>Name: Samsheena</li>
                           <li>Age: 20</li>
                           <li>Occupation: Web Developer</li>
 
@@ -87,7 +87,7 @@
                   </div>
                   <div class="col-md-6">
                       <ul>
-                          <li>Name: Fathima Ifla</li>
+                          <li>Name: Samsheena</li>
                           <li>Age: 20</li>
                           <li>Occupation: Web Developer</li>
 
@@ -271,6 +271,7 @@
       </div>
 </section>
 
+
 <!-- contact section-->
 <section id="contact">
   <div class="container mt-3 contactContent">
@@ -281,7 +282,8 @@
               <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
               <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
                   <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.5773058066543!2d75.50536847453014!3d12.740975287553603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba4e9e7cd8a447d%3A0xcd599e5449af06e3!2sFathima%20Manzil!5e0!3m2!1sen!2sin!4v1702289042334!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3891.5902560119475!2d75.50599467553987!3d12.74013201990985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba4e9c3b537e74f%3A0x64ab42c12a8e6de3!2sAshik%20Manzil!5e0!3m2!1sen!2sin!4v1702289133263!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                   </div>
                   <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
                   <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
@@ -300,15 +302,15 @@
                   </div>
               </form>
               <button type="button" class="btn btn-success mt-3">Contact Me</button>
-              
+             
           </div>
 
       </div>
   </div>
 </section>
 
- <!-- footer section-->
- <footer id="footer">
+<!-- footer section-->
+<footer id="footer">
   <div class="container-fluid">
       <!-- social media icons -->
       <div class="social-icons mt-4">
@@ -336,8 +338,8 @@ $.ajax(settings).done(function (response) {
   console.log(response);
   $('#catFact')[0].innerHTML = response.fact;
 });
+</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
-  
 <script type="text/javascript">
     axios.get('http://api.weatherstack.com/current?access_key=e64be90508de3e219fbe665a67b4b344&query=Kadaba').then((response) => {
       console.log(response);
@@ -349,5 +351,6 @@ $.ajax(settings).done(function (response) {
       $('#observedAt')[0].innerHTML = response.data.current.observation_time;
     });
 </script>
+
 </body>
 </html>
